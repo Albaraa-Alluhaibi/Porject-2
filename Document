@@ -1,0 +1,43 @@
+Banker's Algorithm Program Documentation
+
+Overview
+
+From the Assignment #2:
+Banker’s Algorithm for deadlock avoidance. Considering a system with five processes P0 through P4 and three resources of type A, B, C. Resource type A has 10 instances, B has 5 instances and type C has 7 instances. Implement the Banker’s algorithm to answer the following question： Is the system in a safe state? If Yes, then what is the safe sequence?
+
+Files
+banker.cpp: The main C++ source code file containing the implementation of the Banker's Algorithm.
+input.txt: The input file containing information about the processes, resource allocation, and available resources.
+README.md: Documentation file providing instructions on how to use the program.
+
+Compilation
+
+To compile the program, use a C++ compiler such as g++:
+
+g++ banker.cpp -o banker
+
+Input Format
+The input file (input.txt) should follow this format:
+n m
+Allocated resources for each process
+Max resources required for each process.
+Available resources
+Where:
+
+n: Number of processes
+m: Number of resource types
+Allocated resources for each process: Matrix representing the resources currently allocated to each process.
+Max resources required for each process: Matrix represents the maximum resources each process may request.
+
+Available resources: Vector representing the available resources in the system.
+
+Running the Program
+
+After compilation, run the program using:
+
+./banker
+
+Follow the on-screen instructions to provide the input file (input.txt). The program will then determine whether the system is in a safe state and output the safe sequence if it is.
+
+Credits
+This program is developed by Albaraa Alluhaibi.
